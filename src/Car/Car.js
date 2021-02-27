@@ -2,9 +2,11 @@ import React from "react";
 
 function Car(props) {
     const divStyle = {
+        display: "block",
         textAlign: "center",
         padding: "10px",
-        margin: "10px",
+        marginBottom: "10px",
+        border: "1px solid #ccc",
     };
 
     return (
@@ -12,6 +14,12 @@ function Car(props) {
             <p>Car: {props.name}</p>
             <p>Year: {props.year}</p>
             <p>Model: {props.model}</p>
+            <input
+                type="text"
+                onChange={props.onChangeName}
+                value={props.name}
+            />
+            <button onClick={props.onDelete}>Delete</button>
         </div>
     );
 }
