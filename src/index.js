@@ -5,7 +5,7 @@ import App from "./App";
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <App title={"I am from props"} />
     </React.StrictMode>,
     document.getElementById("root")
 );
